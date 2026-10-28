@@ -55,7 +55,17 @@ flowchart TD
 ```
 
 ## Key Learnings
-Document the IAM concepts learned, issues encountered, and how they were resolved.
+
+Through these labs, I gained practical experience with Microsoft Entra ID application registration, OAuth 2.0 authentication, Microsoft Graph permissions, and external identity onboarding.
+
+- **Application Registration:** Learned how to configure a single-tenant application, set a redirect URI for Postman, and review delegated Microsoft Graph permissions.
+- **OAuth 2.0 Authentication:** Tested the Authorization Code flow in Postman and successfully obtained an access token to authenticate a Microsoft Graph request.
+- **Microsoft Graph:** Used the delegated `User.Read` permission to retrieve the signed-in user's profile and verify that authentication and API access were working.
+- **External Identity Management:** Configured a Microsoft Entra External ID user flow using email-based one-time passcodes and verified that an external identity account was created.
+- **Authentication Testing and Troubleshooting:** Practised initiating authentication requests, completing the sign-in process, and checking the resulting identity and API response.
+- **Security Awareness:** Explored how application credentials and access tokens must be protected, why sensitive information should be excluded from public repositories, and why production authentication configurations require additional security review.
+
+This project strengthened my understanding of identity and access management (IAM) and gave me hands-on experience connecting application registration, authentication, and identity verification workflows.
 
 ## Security and Scope
 This is a documented lab environment. Screenshots and examples are sanitized to avoid exposing credentials, tokens, tenant identifiers, or personal information.
