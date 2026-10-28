@@ -20,6 +20,8 @@ I created an OAuth 2.0 API authorization configuration with the following settin
 
 The authorization and token endpoints were configured using my Microsoft Entra ID tenant endpoints.
 
+![Postman OAuth 2.0 Authorization Code configuration](../screenshots/postman-oauth-configuration.png)
+
 ## Scope Selection
 
 I configured the following scopes:
@@ -57,6 +59,8 @@ I selected **Use Token** in Postman to apply the obtained token to the API reque
 
 I executed the request, and Postman successfully returned my user profile from Microsoft Graph.
 
+![Successful Microsoft Graph user profile response in Postman](../screenshots/graph-profile-response.png)
+
 ### Results
 
 The test demonstrated that:
@@ -65,14 +69,6 @@ The test demonstrated that:
 - Postman successfully obtained a token through the configured Authorization Code flow.
 - The token could be used to make a successful request for the signed-in user's profile.
 - The configured authentication and delegated permission setup worked for this test scenario.
-
-### Evidence
-
-The following screenshots can be added to document the successful test:
-
-1. **Authentication:** The Postman OAuth 2.0 configuration, with sensitive values hidden.
-2. **Token acquisition:** Evidence that Postman successfully obtained a token, without displaying the token itself.
-3. **Profile response:** The successful Microsoft Graph response, with personal information redacted where appropriate.
 
 ## Conclusion
 
