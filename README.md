@@ -29,7 +29,30 @@ Description of the configuration, user flow, testing process, and results.
 [View self-service sign-up documentation](self-service-signup/README.md)
 
 ## Architecture and Workflow
-Add a simple diagram or explanation showing how the user, application, and Microsoft Entra ID interact.
+
+## Architecture and Workflow
+
+```mermaid
+flowchart TD
+    A[Test User] --> B[Postman OAuth 2.0 Request]
+    B --> C[Employee Portal App Registration]
+    C --> D[Microsoft Entra ID Authentication]
+    D --> E[Authorization Code Flow]
+    E --> F[Access Token Obtained]
+    F --> G[Microsoft Graph User.Read Request]
+    G --> H[User Profile Returned]
+
+    I[External User] --> J[Employee Portal External ID User Flow]
+    J --> K[Email One-Time Passcode]
+    K --> L[User Completes Flow]
+    L --> M[External Identity Created in Entra]
+
+    style C fill:#17365D,color:#FFFFFF,stroke:#4F81BD
+    style D fill:#17365D,color:#FFFFFF,stroke:#4F81BD
+    style G fill:#17365D,color:#FFFFFF,stroke:#4F81BD
+    style J fill:#17365D,color:#FFFFFF,stroke:#4F81BD
+    style M fill:#17365D,color:#FFFFFF,stroke:#4F81BD
+```
 
 ## Key Learnings
 Document the IAM concepts learned, issues encountered, and how they were resolved.
