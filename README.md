@@ -67,8 +67,7 @@ Through these labs, I gained practical experience with Microsoft Entra ID applic
 
 This project strengthened my understanding of identity and access management (IAM) and gave me hands-on experience connecting application registration, authentication, and identity verification workflows.
 
-## Security and Scope
-This is a documented lab environment. Screenshots and examples are sanitized to avoid exposing credentials, tokens, tenant identifiers, or personal information.
-
 ## Disclaimer
-This project is for educational and portfolio purposes. Configuration and test results are specific to the lab environment.
+This project was conducted in a sandbox environment for educational and testing purposes. It demonstrates hands-on exploration of Microsoft Entra ID application registration, OAuth 2.0 authentication, Microsoft Graph permissions, and Microsoft Entra External ID self-service sign-up.
+
+The configuration is intended for learning and demonstration, not as a production-ready implementation. Security settings and authentication flows should be reviewed and adapted before use in a real-world environment. Sensitive credentials and personal information have been excluded from published materials.
