@@ -39,9 +39,44 @@ The client secret is sensitive information and must not be included in screensho
 
 ## Validation
 
-This setup provides a way to test the authorization flow and, after obtaining an access token, make a Microsoft Graph request to validate the intended delegated access.
+## Test Procedure and Results
 
-The final documentation should record the actual outcome of the test, including whether token acquisition succeeded and whether the Microsoft Graph request returned the expected user profile information.
+### Step 1: Initiate Authentication
+
+I initiated the OAuth 2.0 Authorization Code flow in Postman. The process redirected me to Microsoft Entra ID, where I was prompted to sign in using my Entra account.
+
+### Step 2: Obtain an Access Token
+
+After successfully signing in, Postman completed the authorization flow and obtained a token.
+
+### Step 3: Apply the Token
+
+I selected **Use Token** in Postman to apply the obtained token to the API request.
+
+### Step 4: Retrieve the User Profile
+
+I executed the request, and Postman successfully returned my user profile from Microsoft Graph.
+
+### Results
+
+The test demonstrated that:
+
+- The interactive sign-in process completed successfully.
+- Postman successfully obtained a token through the configured Authorization Code flow.
+- The token could be used to make a successful request for the signed-in user's profile.
+- The configured authentication and delegated permission setup worked for this test scenario.
+
+### Evidence
+
+The following screenshots can be added to document the successful test:
+
+1. **Authentication:** The Postman OAuth 2.0 configuration, with sensitive values hidden.
+2. **Token acquisition:** Evidence that Postman successfully obtained a token, without displaying the token itself.
+3. **Profile response:** The successful Microsoft Graph response, with personal information redacted where appropriate.
+
+## Conclusion
+
+This test provided practical experience configuring an OAuth 2.0 Authorization Code flow with Microsoft Entra ID and using Postman to validate delegated access to Microsoft Graph. It also demonstrated how application registration settings, redirect URIs, scopes, and client credentials work together in an authentication scenario.
 
 ## Key Learnings
 
