@@ -12,15 +12,19 @@ The app registration served as the foundation for subsequent authentication test
 
 I registered an application named `Employee Portal` in Microsoft Entra ID and configured it as **Single Tenant**, limiting the intended sign-in audience to users in the application's home tenant.
 
+![Employee Portal app registration overview](../screenshots/app-registration-overview.png)
+
 ### 2. Redirect URI
 
-I added Postman's callback URL as a redirect URI for the application. This configuration allows the authentication flow to return its response to the configured callback endpoint.
+I added Postman's callback URL as a redirect URI for the application. This configuration allows the authentication flow to return its response to the configured callback endpoint. This can also be seen in the screenshot above
 
 ### 3. Microsoft Graph Permissions
 
 I configured the Microsoft Graph `User.Read` permission to support validation of the authentication flow and access to the signed-in user's profile information.
 
 This permission was relevant to testing whether the application could successfully authenticate and make the intended Microsoft Graph request.
+
+![Microsoft Graph User.Read API permission](../screenshots/graph-permissions.png)
 
 ### 4. Client Secret
 
