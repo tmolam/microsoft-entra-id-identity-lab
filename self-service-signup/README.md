@@ -18,9 +18,13 @@ The purpose was to explore how an external user can authenticate using an email 
 
 I crafted an OAuth authorization request in Postman to initiate the authentication process for Employee Portal.
 
+![Postman OAuth request](../screenshots/external-id-oauth-request.png)
+
 ### 2. Select an Account
 
 When prompted to sign in, I selected **Use another account** and entered my own email address to test the external user journey.
+
+![External ID user flow](../screenshots/external-id-user-flow.png)
 
 ### 3. Verify the One-Time Passcode
 
@@ -29,6 +33,8 @@ I received a one-time passcode at the email address I entered and used it to con
 ### 4. Verify External Identity Creation
 
 After completing the flow, I checked Microsoft Entra and confirmed that an external identity account had been created. The account appeared with the `ext_account` identity classification.
+
+![External identity created in Entra](../screenshots/external-identity-created.png)
 
 ## Results
 
