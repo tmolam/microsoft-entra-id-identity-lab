@@ -32,7 +32,7 @@ I received a one-time passcode at the email address I entered and used it to con
 
 ### 4. Verify External Identity Creation
 
-After completing the flow, I checked Microsoft Entra and confirmed that an external identity account had been created. The account appeared with the `ext_account` identity classification.
+After completing the flow, I checked Microsoft Entra and confirmed that an external identity account had been created. The account appeared with the `Guest account` identity classification.
 
 ![External identity created in Entra](../screenshots/external-identity-created.png)
 
